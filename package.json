@@ -1,0 +1,19 @@
+{
+  "name": "trans-to-miniapp",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "author": "ioolllzzzz@qq.com",
+  "license": "MIT",
+  "scripts": {
+    "wx": "node build t:wx",
+    "wx:watch": "node build t:wx w:1",
+    "qq": "node build t:qq",
+    "tt": "node build t:tt",
+    "bd": "node build t:bd",
+    "all": "npm run wx && npm run qq && npm run tt && npm run bd"
+  },
+  "dependencies": {
+    "chokidar": "^2.1.5"
+  }
+}

@@ -59,3 +59,18 @@ typings/
 
 # next.js build output
 .next
+
+
+.vscode
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*swp
+
+dist/
+package-lock.json
+project.*.json

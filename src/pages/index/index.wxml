@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  _wx_begin_
+  <text>this is weapp</text>
+  _wx_end_
+  _q_begin_
+  <text>this is qqminiapp</text>
+  _q_end_
+  _tt_begin_
+  <text>bytedance miniapp</text>
+  _tt_end_
+  _bd_begin_
+  <text>baidu smartapp</text>
+  _bd_end_
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
